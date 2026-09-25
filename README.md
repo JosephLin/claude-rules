@@ -9,8 +9,10 @@ they don't hold back newer models.
 - [`projects.md`](projects.md): how code projects are built: git, docs, testing,
   CI, secrets and cost controls.
 
-Each rule exists because its absence cost something. The reasoning behind the
-working style is summarized in the commit history.
+Each rule exists because its absence cost something. [`research/`](research/) holds
+a monthly review of agent, model and workflow practice: what changed, with sources,
+and which rules it argues for adding, changing or dropping. A scheduled Claude
+routine opens each review as a pull request; rule changes are made separately.
 
 ## Using them
 
