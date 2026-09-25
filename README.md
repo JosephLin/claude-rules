@@ -36,3 +36,9 @@ mkdir -p ~/.claude
 
 Suggestions and disagreements are welcome as issues or PRs, especially ones backed
 by a measurement.
+
+## License
+
+[CC BY 4.0](LICENSE): copy, adapt and use them, including commercially, as long as
+you credit this repo and say whether you changed anything. Lifting a few bullets
+into your own `CLAUDE.md` with a link back is enough.
