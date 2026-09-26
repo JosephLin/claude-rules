@@ -150,6 +150,9 @@ Leave out what an agent can read from the code or already knows.
 
 - Package a repeated workflow as a skill, including what it must not do.
 - Prune `settings.local.json` when a project moves.
+- A background worktree agent's `preview_start` runs the main checkout's
+  `.claude/launch.json` in the main checkout, so it checks pre-edit code. Start the
+  dev server in the worktree on a free port and navigate to it instead.
 
 ## 11. Architecture defaults
 
