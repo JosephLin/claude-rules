@@ -3,9 +3,10 @@
 The standing instructions I give Claude Code, written to be short and high-level so
 they don't hold back newer models.
 
-- [`CLAUDE.md`](CLAUDE.md): how work with Claude runs. A main session defines tasks,
-  hands-off task sessions carry them out, there's a `TASKS.md` queue and one writer
-  per area, reviews come from fresh context, and safety comes from structure.
+- [`CLAUDE.md`](CLAUDE.md): how work with Claude runs. A coordinator (a Claude Code
+  project, or a main session with a `TASKS.md` queue) defines tasks, hands-off
+  workers carry them out with one per area, reviews come from fresh context, and
+  safety comes from structure.
 - [`projects.md`](projects.md): how code projects are built: git, docs, testing,
   CI, secrets and cost controls.
 
