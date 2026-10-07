@@ -40,7 +40,8 @@ docs can link to them.
 - `CLAUDE.md` covers how to work on it: commands, layout, invariants and gotchas.
   Keep it short, so every line matters to a session starting cold.
 - `ROADMAP.md` is the dated history, added once there's a second phase.
-- `TASKS.md` is the live queue (see Working style in `CLAUDE.md`).
+- `TASKS.md` is the live queue for work run from a main session; a Claude Code
+  project's Overview replaces it (see Working style in `CLAUDE.md`).
 - Keep anything an agent should derive on its own, such as eval answers or ground
   truth, out of always-loaded files.
 - Multi-repo products get a workspace-level `CLAUDE.md` that owns the cross-repo
@@ -153,6 +154,10 @@ Leave out what an agent can read from the code or already knows.
 - A background worktree agent's `preview_start` runs the main checkout's
   `.claude/launch.json` in the main checkout, so it checks pre-edit code. Start the
   dev server in the worktree on a free port and navigate to it instead.
+- Cloud threads see only what they clone: not `~/.claude`, `~/Projects` or `data/`.
+  A project's cloud environment installs these rules with the README's setup script.
+  Work that needs this Mac (Xcode, simulators, `data/`, the Keychain) runs as a local
+  thread through Remote Control, or in a local session.
 
 ## 11. Architecture defaults
 
