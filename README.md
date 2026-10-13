@@ -8,6 +8,9 @@ they don't hold back newer models.
   per area, reviews come from fresh context, and safety comes from structure.
 - [`projects.md`](projects.md): how code projects are built: git, docs, testing,
   CI, secrets and cost controls.
+- [`skills/task-dispatch`](skills/task-dispatch/SKILL.md): the mechanics behind the
+  working style: builder and reviewer brief templates, the review-and-merge loop,
+  and measured costs per agent. It loads only when main hands off a task.
 
 Each rule exists because its absence cost something. [`research/`](research/) holds
 a monthly review of agent, model and workflow practice: what changed, with sources,
@@ -25,6 +28,12 @@ private to your machine:
 
 For project conventions, import `projects.md` from a `CLAUDE.md` in your projects
 folder.
+
+Install the skill by linking it into your user skills:
+
+```bash
+ln -s ~/path/to/claude-rules/skills/task-dispatch ~/.claude/skills/task-dispatch
+```
 
 **In Claude Code cloud sessions**, which see only the repo they clone, add this to
 the cloud environment's setup script:

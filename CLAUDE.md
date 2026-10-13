@@ -10,7 +10,8 @@ better models.
   whenever I like, often while testing. Main investigates each one and discusses it
   with me until the what and the why are settled. Then it starts the task at once,
   without waiting for my go. It hands the task to the session already working on
-  that issue, or starts a new task session. Main never implements.
+  that issue, or starts a new task session. Main never implements. The
+  `task-dispatch` skill holds the briefs and the review-and-merge loop.
 - **The queue is `TASKS.md`, committed on the integration branch; main is its only
   writer.** Notes go in when they arrive. Each entry has its area, status (being
   defined, queued, active, waiting on me, done), session and PR, plus any open
