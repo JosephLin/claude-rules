@@ -58,6 +58,9 @@ Include what an agent would otherwise get wrong:
   tried and failed, and any deliberate absence;
 - pointers to runtime checks (`/healthz`) rather than prose that will drift.
 
+An invariant that matters is enforced by a check or hook that fails closed; the
+`CLAUDE.md` line names it. Compliance with prose decays within a session.
+
 Leave out what an agent can read from the code or already knows.
 
 ## 5. Git
@@ -153,6 +156,9 @@ Leave out what an agent can read from the code or already knows.
 - A background worktree agent's `preview_start` runs the main checkout's
   `.claude/launch.json` in the main checkout, so it checks pre-edit code. Start the
   dev server in the worktree on a free port and navigate to it instead.
+- Task sessions run in auto mode by default. Give them structural limits (sandbox,
+  `permissions.blockWritesOutsideWorkingDirectories`), and note that Projects cloud
+  threads don't load `.claude/settings.json`.
 
 ## 11. Architecture defaults
 
