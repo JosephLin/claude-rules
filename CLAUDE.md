@@ -26,6 +26,12 @@ better models.
   against the brief, rerunning the checks and reading the diff itself rather than
   trusting the session's report, ideally on the running app, and leaves its findings
   on the PR. Any change to tests or checks gets flagged.
+- **Polish runs as a loop, reviewed per round.** For many small tweaks, one
+  long-lived session takes my notes directly. After each tweak it rebuilds the test
+  build on real data for me, commits, and skips review. When I say the round is
+  done, it runs the tests and benches and opens one PR. A fresh reviewer checks the
+  whole round, then re-checks the fixes once, and main merges. A new round gets a
+  new session.
 - **Safety comes from structure.** Task sessions get least privilege: isolated
   environments, no production credentials, protected branches. Reversible work runs
   freely. Anything irreversible, plus product calls, copy and spending, comes to me
